@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>My Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Font Awesome CDN -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
 
-  <style>
+   <style>
     body {
       background-color: #222;
       color: #fff;
     }
+    /*.profile-pic {
+      max-width: 80%;
+      height: auto;
+      border: 4px solid #fff;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }*/
+
     .hero-section {
       height: 100vh;
     }
@@ -20,21 +26,58 @@
       color: #000;
       background-color: #fff;
     }
+    .modal-content {
+      color: #000; /* Make modal text visible */
+    }
+    #footer a:hover {
+      text-decoration: underline;
+      color: #f5f5f5; /* Bootstrap primary blue */
+    }
+      #footer {
+      background: linear-gradient(to right, #f8f9fa, #e9ecef);
+      border-top: 2px solid #dee2e6;
+    }
+
+    .footer-icon-link {
+      background-color: #fff;
+      color: #343a40;
+      padding: 14px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      width: 50px;
+      height: 50px;
+      text-decoration: none;
+    }
+
+    .footer-icon-link:hover {
+      color: #fff;
+      transform: translateY(-4px) scale(1.05);
+    }
+
+    .footer-icon-link:nth-child(1):hover { background-color: #dc3545; }  /* Gmail - Red */
+    .footer-icon-link:nth-child(2):hover { background-color: #25d366; }  /* WhatsApp - Green */
+    .footer-icon-link:nth-child(3):hover { background-color: #0077b5; }  /* LinkedIn - Blue */
+    .footer-icon-link:nth-child(4):hover { background-color: #6f42c1; }  /* Resume - Purple */
+
   </style>
 </head>
 <body>
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark px-4">
-  <a class="navbar-brand" href="home">Parakh Chauhan</a>
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark px-5">
+  <a class="navbar-brand" href="https://parakhchauhan.github.io/portfolio/">Parakh Chauhan</a>
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
     <ul class="navbar-nav">
-      <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+      <li class="nav-item"><a class="nav-link" href="#home">Me</a></li>
+      <li class="nav-item"><a class="nav-link" href="#skills">Tech stack</a></li>
       <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-      <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-      <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
     </ul>
   </div>
 </nav>
@@ -43,32 +86,76 @@
 <!-- Main Content Container -->
 <div class="container mt-5" id="home">
 
-<section class="container-fluid hero-section d-flex align-items-center px-5">
-  <div class="row w-100">
-    <div class="col-md-6 text-center mb-4 mb-md-0">
-      <img src="https://picsum.photos/900/800?grayscale" class="img-fluid rounded" alt="Profile Image">
+<section class="container-fluid hero-section d-flex align-items-center px-5 mb-5">
+  <div class="row w-100 mt-5">
+    <div class="col-md-6 text-center mt-5 mb-4 mb-md-0">
+      <img src="profile.jpg" width="90%" height="20%" class="img-fluid rounded profile-pic" alt="Profile Image">
     </div>
     <div class="col-md-6 d-flex flex-column justify-content-center">
       <h1 class="display-3 fw-bold">Welcome to my<br>Portfolio</h1>
       <hr class="border-light w-25">
-      <p class="lead">My Name is <b>Parakh Chauhan</b>, a QA Engineer ensuring reliable performance - One bug report at a time</p>
-      <div class="mt-3">
-        <a href="#projects" class="btn btn-outline-light me-2">Explore Now</a>
-        <a href="#" class="btn btn-outline-light">
-          <i class="bi bi-play-circle"></i> Play Video
-        </a>
+      <p class="lead">My Name is <b>Parakh Chauhan</b>, I'm someone who loves building things that work — and making sure they really work. With a sharp eye for detail and a curious mind, I enjoy turning ideas into smooth, reliable applications and ensuring every part works just as it should. I’m always up for a new challenge, a meaningful conversation, or a chance to learn something new.</p>
+      <p><b>Let’s connect — maybe over coffee, code, or a crazy idea! ☕💬</b></p>
+      <div class="mt-3 mb-5">
+        <a href="#projects" class="btn btn-outline-light me-2">Explore Projectss</a>
       </div>
     </div>
   </div>
 </section>
-
+<br>
 
 <section id="skills" class="mb-5">
   <div class="container">
-    <h2 class="mb-4 text-center">Skills</h2>
+    <h2 class="mb-4 text-center">Tech Stack</h2>
     <div class="row justify-content-center">
 
       <!-- Skill Card Start -->
+      
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+        <div class="card text-center border-0 shadow-sm p-2">
+          <div class="card-body p-2">
+            <img src="https://cdn.worldvectorlogo.com/logos/php-6.svg" alt="Postman" class="img-fluid mb-2" style="height: 40px;">
+            <h6 class="card-title mb-0">PHP</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+        <div class="card text-center border-0 shadow-sm p-2">
+          <div class="card-body p-2">
+            <img src="https://cdn.worldvectorlogo.com/logos/laravel-3.svg" alt="Postman" class="img-fluid mb-2" style="height: 40px;">
+            <h6 class="card-title mb-0">Laravel</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+        <div class="card text-center border-0 shadow-sm p-2">
+          <div class="card-body p-2">
+            <img src="https://cdn.worldvectorlogo.com/logos/vue-9.svg" alt="Postman" class="img-fluid mb-2" style="height: 40px;">
+            <h6 class="card-title mb-0">VUE</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+        <div class="card text-center border-0 shadow-sm p-2">
+          <div class="card-body p-2">
+            <img src="https://cdn.worldvectorlogo.com/logos/fastapi-1.svg" alt="Postman" class="img-fluid mb-2" style="height: 40px;">
+            <h6 class="card-title mb-0">FastAPI</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+        <div class="card text-center border-0 shadow-sm p-2">
+          <div class="card-body p-2">
+            <img src="https://cdn.worldvectorlogo.com/logos/flask.svg" alt="Postman" class="img-fluid mb-2" style="height: 40px;">
+            <h6 class="card-title mb-0">Flask</h6>
+          </div>
+        </div>
+      </div>
+
       <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
         <div class="card text-center border-0 shadow-sm p-2">
           <div class="card-body p-2">
@@ -77,7 +164,7 @@
           </div>
         </div>
       </div>
-      <!-- Skill Card End -->
+      
 
       <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
         <div class="card text-center border-0 shadow-sm p-2">
@@ -151,95 +238,108 @@
         </div>
       </div>
 
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+        <div class="card text-center border-0 shadow-sm p-2">
+          <div class="card-body p-2">
+            <img src="https://cdn.worldvectorlogo.com/logos/css-3.svg" alt="HTML" class="img-fluid mb-2" style="height: 40px;">
+            <h6 class="card-title mb-0">CSS</h6>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
 
 <!-- Projects Section -->
-    <section id="projects" class="mb-5">
-      <h2>Projects</h2>
-      <div class="row">
-        
-        <!-- Project 1 -->
-        <div class="col-md-4">
-          <div class="card mb-4">
-            <img src="https://picsum.photos/100/50" class="card-img-top" alt="Project 1">
-            <div class="card-body">
-              <h5 class="card-title">Project One</h5>
-              <p class="card-text">A brief description of Project One highlighting its features and technologies.</p>
-              <a href="#" class="btn btn-primary">View Details</a>
-            </div>
-          </div>
+  <section id="projects" class="mb-5">
+  <h2>Projects</h2>
+  <div class="row">
+    <!-- Project 1 -->
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <img src="https://picsum.photos/100/50" class="card-img-top" alt="Project 1">
+        <div class="card-body">
+          <h5 class="card-title">School ERP</h5>
+          <p class="card-text">Built a responsive ERP dashboard to manage student data efficiently.</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project1Modal">
+            View Details
+          </button>
         </div>
-        
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="project1ModalLabel">School ERP</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <!-- Project Image -->
+        <img src="https://picsum.photos/800/300" class="img-fluid rounded mb-3" alt="School ERP Screenshot">
+
+        <!-- Project Description -->
+        <p>I’ve built a complete School ERP system using Vue.js, Tailwind CSS, and AG Grid. It’s a fully responsive,
+        single-page dashboard that allows admins to manage student records efficiently.</p>
+
+        <p>The system includes features like dynamic data tables with filtering, sorting, and action buttons for editing and deleting entries. I
+        integrated backend APIs to fetch real-time student data, including nested details like guardians and academics, and made sure the UI feels clean and intuitive.</p>
+
+        <p>The layout includes a sidebar, top navigation bar, and modular pages for registration, student management, and more. It’s designed to be scalable, fast, and ready for future enhancements like role-based access, analytics, or export features.</p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="https://github.com/parakhchauhan/School-ERP" class="btn btn-primary">View Project</a>
+      </div>
+    </div>
+  </div>
 </div>
 
 
-<section class="bg-light text-dark pt-4 pb-3" id="footer">
-  <div class="container text-center text-md-start">
-    <div class="row">
+</div>
 
-      <!-- Work With Me -->
-      <div class="col-md-4 mb-4">
-        <h5 class="text-uppercase">Work With Me</h5>
-        <p>I’m a QA Engineer passionate about quality, ready to help build your next reliable product.</p>
-      </div>
 
-      <!-- Connect -->
-      <div class="col-md-4 mb-4">
-        <h5 class="text-uppercase">Connect</h5>
-        <ul class="list-unstyled">
-          <li class="mb-2">
-            <a href="mailto:yourmail@gmail.com" target="_blank" class="text-dark text-decoration-none">
-              <i class="fas fa-envelope me-2"></i>Gmail
-            </a>
-          </li>
-          <li class="mb-2">
-            <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="text-dark text-decoration-none">
-              <i class="fab fa-whatsapp me-2"></i>WhatsApp
-            </a>
-          </li>
-          <li class="mb-2">
-            <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="text-dark text-decoration-none">
-              <i class="fab fa-linkedin me-2"></i>LinkedIn
-            </a>
-          </li>
-          <li class="mb-2">
-            <a href="resume.pdf" download class="text-dark text-decoration-none">
-              <i class="fas fa-file-download me-2"></i>Download Resume
-            </a>
-          </li>
-        </ul>
-      </div>
+<section class="bg-light text-dark pt-5 pb-4" id="footer">
+  <div class="container text-center">
+    <h5 class="text-uppercase mb-3 fw-bold">Let’s Connect</h5>
+    <p class="mb-4">From crafting clean code to ensuring quality at every step — I’m open to full-time and freelance opportunities in development & QA.</p>
+    <p>Let’s build something great together! 🤝</p>
 
-      <!-- Hire Me -->
-      <div class="col-md-4 mb-4">
-        <h5 class="text-uppercase">Hire Me</h5>
-        <p>Open for full-time and freelance QA opportunities. Let’s collaborate!</p>
-      </div>
-
+    
+    <div class="d-flex justify-content-center gap-4 fs-4 flex-wrap">
+      <a href="mailto:parakhchauhan12@gmail.com" class="footer-icon-link" title="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://wa.me/+919589897884" class="footer-icon-link" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/parakh-chauhan/" class="footer-icon-link" title="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="resume.pdf" class="footer-icon-link" title="Download Resume" download>
+        <i class="fas fa-file-download"></i>
+      </a>
     </div>
   </div>
 </section>
 
 
-
-
 <!-- Footer -->
 <footer class="bg-dark text-white text-center py-3">
   <div class="container">
-    <p class="mb-0">&copy; 2025 Taranjeet. All rights reserved.</p>
+    <p class="mb-0">&copy; 2025 Parakh. All rights reserved.</p>
   </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
-
-
-
-
-
