@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parakh Chauhan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            primary: '#FFD700',
+            dark: '#111111'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    .parallax {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+</head>
+<body class="bg-dark text-white font-sans">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-dark border-b border-primary shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo -->
+        <a href="#" class="text-2xl font-bold text-primary">Parakh Chauhan</a>
+
+        <!-- Mobile Menu Toggle -->
+        <div class="md:hidden">
+          <button id="menuToggle" type="button" class="text-white focus:outline-none">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+
+        <!-- Menu (Desktop) -->
+        <nav class="hidden md:flex space-x-6 text-white font-medium">
+          <a href="#home" class="hover:text-primary transition">Me</a>
+          <a href="#skills" class="hover:text-primary transition">Tech Stack</a>
+          <a href="#projects" class="hover:text-primary transition">Projects</a>
+          <a href="#blog" class="hover:text-primary transition">Blog</a>
+          <a href="#footer" class="hover:text-primary transition">Contact</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Menu (Mobile) -->
+    <div id="navMenu" class="hidden md:hidden bg-dark text-white px-6 py-4 space-y-3 font-medium border-t border-gray-700">
+      <a href="#home" class="block hover:text-primary transition">Me</a>
+      <a href="#skills" class="block hover:text-primary transition">Tech Stack</a>
+      <a href="#projects" class="block hover:text-primary transition">Projects</a>
+      <a href="#blog" class="block hover:text-primary transition">Blog</a>
+      <a href="#footer" class="block hover:text-primary transition">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="parallax bg-[url('https://images.unsplash.com/photo-1503264116251-35a269479413')] min-h-screen flex items-center justify-center text-center pt-24 px-4" style="background-color: rgba(0,0,0,0.7); background-blend-mode: multiply;">
+    <div class="p-8 rounded-lg shadow-lg max-w-2xl" data-aos="fade-up">
+      <h1 class="text-4xl md:text-5xl font-bold text-primary mb-4">Hi, I'm Parakh Chauhan</h1>
+      <p class="text-lg mb-6 text-white">A developer turned QA engineer who found his passion in testing. I love digging deep, finding what breaks (and why), and ensuring every app works flawlessly. With a builder’s mindset and a tester’s eye, I bridge the gap between code and quality — always ready for the next bug hunt or brainstorm ☕🔍</p>
+      <a href="#about" class="underline hover:text-primary transition">Learn more about me ↓</a> 
+      <br>
+      <br>
+      <a href="#projects" class="inline-block px-6 py-2 border border-yellow-400 text-yellow-400 font-semibold rounded hover:bg-yellow-400 hover:text-black transition">Explore Projects</a>
+    </div>
+  </section>
+
+  <!-- Tech Stack -->
+  <section id="skills" class="py-20 bg-black">
+    <h2 class="text-3xl font-bold text-center text-primary mb-10" data-aos="fade-up">Tech Stack</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 max-w-6xl mx-auto px-4" data-aos="zoom-in">
+      <div class="flex flex-col items-center">
+        <img src="https://cdn.worldvectorlogo.com/logos/python-5.svg" class="w-12 mb-2" alt="PHP">
+        <span class="text-sm font-medium">Python</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <img src="https://cdn.worldvectorlogo.com/logos/selenium-1.svg" class="w-12 mb-2" alt="PHP">
+        <span class="text-sm font-medium">Selenium</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <img src="https://cdn.worldvectorlogo.com/logos/postman.svg" class="w-12 mb-2" alt="PHP">
+        <span class="text-sm font-medium">Postman</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <img src="https://cdn.worldvectorlogo.com/logos/jira-1.svg" class="w-12 mb-2" alt="PHP">
+        <span class="text-sm font-medium">Jira</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <img src="https://cdn.worldvectorlogo.com/logos/git-icon.svg" class="w-12 mb-2" alt="PHP">
+        <span class="text-sm font-medium">Git</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <img src="https://cdn.brandfetch.io/idylTcVOhZ/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1743149670926" class="w-12 mb-2" alt="PHP">
+        <span class="text-sm font-medium">Testrail</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <img src="https://cdn.worldvectorlogo.com/logos/php-6.svg" class="w-12 mb-2" alt="PHP">
+        <span class="text-sm font-medium">PHP</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <img src="https://cdn.worldvectorlogo.com/logos/mysql-logo-pure.svg" class="w-12 mb-2" alt="PHP">
+        <span class="text-sm font-medium">SQL</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <img src="https://cdn.worldvectorlogo.com/logos/vue-9.svg" class="w-12 mb-2" alt="Vue">
+        <span class="text-sm font-medium">Vue</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <img src="https://cdn.worldvectorlogo.com/logos/fastapi-1.svg" class="w-12 mb-2" alt="FastAPI">
+        <span class="text-sm font-medium">FastAPI</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <img src="https://icon2.cleanpng.com/20180829/okc/kisspng-flask-python-web-framework-representational-state-flask-stickker-1713946755581.webp" class="w-12 mb-2" alt="Flask">
+        <span class="text-sm font-medium">Flask</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <img src="https://cdn.worldvectorlogo.com/logos/laravel-3.svg" class="w-12 mb-2" alt="Flask">
+        <span class="text-sm font-medium">Laravel</span>
+      </div>
+    </div>
+  </section>
+
+<!-- Project Section -->
+<section id="projects" class="py-20 bg-gradient-to-br from-black via-gray-900 to-black">
+  <h2 class="text-3xl font-bold text-center text-primary mb-12" data-aos="fade-up">Projects</h2>
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-6" data-aos="fade-up" data-aos-delay="200">
+    
+    <!-- Project 1 -->
+    <div class="bg-white text-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition duration-300">
+      <img src="https://picsum.photos/600/300" alt="Project" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h3 class="text-xl font-semibold mb-2">School ERP</h3>
+        <p class="text-sm mb-4">Built a responsive ERP dashboard using Vue.js and Tailwind CSS.</p>
+        <button onclick="openModal('modal1')" class="inline-block px-4 py-2 bg-yellow-400 text-black rounded hover:bg-yellow-500 transition">View Details</button>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="bg-white text-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition duration-300">
+      <img src="https://picsum.photos/601/300" alt="Project" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h3 class="text-xl font-semibold mb-2">Cafe Searching App</h3>
+        <p class="text-sm mb-4">Navigate to your next favorite café with a clean, responsive UI and parallax charm.</p>
+        <button onclick="openModal('modal2')" class="inline-block px-4 py-2 bg-yellow-400 text-black rounded hover:bg-yellow-500 transition">View Details</button>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+      <!-- Simple Modal for Project 1 -->
+      <div id="modal1" class="fixed inset-0 bg-black bg-opacity-70 z-50 hidden flex items-center justify-center">
+        <div class="bg-white text-black max-w-lg w-full rounded-lg shadow-lg p-6 relative">
+          <button onclick="closeModal('modal1')" class="absolute top-2 right-4 text-2xl text-gray-500 hover:text-black">&times;</button>
+          <h2 class="text-xl font-bold mb-4">School ERP</h2>
+          <img src="https://picsum.photos/600/300" class="rounded mb-4" alt="Project Screenshot">
+          <p class="text-sm mb-4">I’ve built a complete School ERP system using Vue.js, Tailwind CSS, and AG Grid. It’s a fully responsive, single-page dashboard that allows admins to manage student records efficiently.</p>
+          <p class="text-sm mb-4">The system includes features like dynamic data tables with filtering, sorting, and action buttons for editing and deleting entries. I integrated backend APIs to fetch real-time student data, including nested details like guardians and academics, and made sure the UI feels clean and intuitive.</p>
+          <p class="text-sm mb-4">The layout includes a sidebar, top navigation bar, and modular pages for registration, student management, and more. It’s designed to be scalable, fast, and ready for future enhancements like role-based access, analytics, or export features.</p>
+          <a href="https://github.com/parakhchauhan/School-ERP" target="_blank" class="inline-block px-4 py-2 bg-primary text-black rounded hover:bg-yellow-500 transition font-medium">View on GitHub</a>
+        </div>
+      </div>
+
+      <!-- Simple Modal for Project 2 -->
+      <div id="modal2" class="fixed inset-0 bg-black bg-opacity-70 z-50 hidden flex items-center justify-center">
+        <div class="bg-white text-black max-w-lg w-full rounded-lg shadow-lg p-6 relative">
+          <button onclick="closeModal('modal2')" class="absolute top-2 right-4 text-2xl text-gray-500 hover:text-black">&times;</button>
+          <h2 class="text-xl font-bold mb-4">Café Finder</h2>
+          <img src="https://picsum.photos/601/300" class="rounded mb-4" alt="Project Screenshot">
+          <p class="text-sm mb-4">Café Finder is a simple and elegant web app built with PHP and Bootstrap that helps users discover nearby cafés with ease. The interface features smooth parallax scrolling for a modern, engaging experience. Users can search, browse, and view café details through a clean, responsive layout — designed for both speed and style.</p>
+        </div>
+      </div>
+
+
+
+   <section id="blog" class="py-20 bg-black">
+    <h2 class="text-3xl font-bold text-center text-primary mb-12" data-aos="fade-up">Blog</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-6" data-aos="fade-up">
+      <div class="bg-white text-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition duration-300">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">My Journey into QA Engineering</h3>
+          <p class="text-sm mb-4">How I shifted from development to a love for testing, and why quality matters most in 2025.</p>
+          <a href="https://medium.com/@parakhchauhan12/️-how-i-shifted-from-development-to-a-love-for-testing-and-why-quality-matters-most-in-2025-24c5338ca4a2" class="text-primary hover:underline" target="_blank" >Read more →</a>
+        </div>
+      </div>
+      <div class="bg-white text-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition duration-300">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">More Than Tech</h3>
+          <p class="text-sm mb-4">How Logging Out Helped Me Log Into Life (and Work) ? What Happened When I Deactivated Instagram for a Year.</p>
+          <a href="https://medium.com/@parakhchauhan12/what-was-it-like-to-deactivate-instagram-for-a-year-8af5c120477d" class="text-primary hover:underline" target="_blank" >Read more →</a>
+        </div>
+      </div>
+      <div class="bg-white text-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition duration-300">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Personal Resets</h3>
+          <p class="text-sm mb-4">The Mental Debug I Didn’t Know I Needed. My Vipassana Experience: How Silence Helped Me Refocus</p>
+          <a href="https://medium.com/@parakhchauhan12/what-is-it-like-to-attend-a-vipassana-course-f26d043e4672" class="text-primary hover:underline" target="_blank">Read more →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="bg-black py-20 text-white">
+    <div class="max-w-6xl mx-auto px-6 md:flex md:items-center md:gap-12">
+      
+      <!-- Image -->
+      <div class="md:w-1/3 mb-10 md:mb-0">
+        <img src="profile.jpg" alt="Parakh Chauhan" class="rounded-lg shadow-lg w-full h-auto object-cover border-4 border-primary" />
+      </div>
+      
+      <!-- Text Content -->
+      <div class="md:w-2/3">
+        <h2 class="text-3xl font-bold text-primary mb-4">About Me</h2>
+        <p class="text-lg leading-relaxed mb-4">
+          I’m Parakh Chauhan — a curious and driven professional with a knack for turning ideas into intuitive, high-quality applications. Whether it’s development or QA, I care deeply about clean code, seamless UX, and products that simply work.
+        </p>
+        <p class="text-lg leading-relaxed mb-4">
+          My background spans front-end engineering (Vue, Tailwind), automation & manual testing (Postman, Selenium), and building real-world apps — like an ERP system and a quick-commerce tool delivery platform.
+        </p>
+        <p class="text-lg leading-relaxed">
+          Beyond the code, I thrive on meaningful conversations, creative problem solving, and lifelong learning. Let’s connect over something amazing — whether it’s a project, an idea, or just curiosity. 🚀
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- Footer -->
+  <section id="footer" class="bg-black text-white py-20">
+    <div class="text-center max-w-xl mx-auto" data-aos="zoom-in">
+      <h3 class="text-3xl font-bold mb-3 text-primary">Let’s Connect</h3>
+      <p class="mb-6">I’m open to full-time and freelance work in development & QA. Let’s build something impactful together 🤝</p>
+      <div class="flex justify-center space-x-4">
+        <a href="mailto:parakhchauhan12@gmail.com" class="bg-yellow-500 text-black p-3 rounded-full hover:scale-110 transition"><i class="fas fa-envelope"></i></a>
+        <a href="https://wa.me/+919589897884" class="bg-green-500 text-white p-3 rounded-full hover:scale-110 transition"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/in/parakh-chauhan/" class="bg-blue-600 text-white p-3 rounded-full hover:scale-110 transition"><i class="fab fa-linkedin-in"></i></a>
+        <a href="resume.pdf" class="bg-purple-600 text-white p-3 rounded-full hover:scale-110 transition" download><i class="fas fa-file-download"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-800 text-white text-center py-4">
+    <p>&copy; 2025 Parakh Chauhan. All rights reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('hidden');
+    });
+
+    function openModal(id) {
+      const modal = document.getElementById(id);
+      modal.classList.remove('hidden');
+      document.body.classList.add('overflow-hidden');
+    }
+
+    function closeModal(id) {
+      const modal = document.getElementById(id);
+      modal.classList.add('hidden');
+      document.body.classList.remove('overflow-hidden');
+    }
+
+
+  </script>
+</body>
+</html>
+
+
+
+
+
